@@ -1,2 +1,2 @@
-# Lens-For-Ghost
-Lens HTML Theme For Ghost Blog
+# Lens For Ghost
+Image Heavy Portfolio Theme For Ghost.

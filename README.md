@@ -14,6 +14,7 @@ Lens For Ghost is a free Ghost Blog theme, which is perfect for a image heavy po
 ### Installation
 Just clone or download this repo as ZIP, and head over to the design section of your Ghost Installation and click on the button called "Upload Theme", and select the ZIP file you have just downloaded. Thats it.
 Don't forget to save changes, and now your site should be up and running with the Lens For Ghost theme.
+
 [Download Lens For Ghost](https://github.com/vasanthdeveloper/Lens-For-Ghost/archive/master.zip)
 
 ### License

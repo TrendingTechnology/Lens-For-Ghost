@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Site Title -->
+	<title>{{meta_title}}</title>
+	<!-- Additional CSS Files -->
+	<link rel="stylesheet" href="assets/css/screen.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<!-- Alternative CSS Files -->
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<!-- Meta Tags -->
+	{{ghost_head}}
+</head>
+<body class="is-loading-0 is-loading-1 is-loading-2">
+	<div id="main">
+		<header id="header">
+			{{#if @blog.logo}}
+			<img class="portfolio-logo" src="{{@blog.logo}}"" alt="{{@blog.tile}}">
+			{{else}}
+			<h1>{{@blog.title}}</h1>
+			{{/if}}
+			<p>{{@blog.description}}</p>
+			<ul class="icons">
+			{{#if @blog.twitter}}
+				<li><a target="_blank" href="{{twitter_url @blog.twitter}}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+			{{/if}}
+			{{#if @blog.facebook}}
+				<li><a target="_blank" href="{{facebook_url @blog.facebook}}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+			{{/if}}
+			</ul>
+			{{#if @labs.subscribers}}
+			<div id="subscribe">
+				{{subscribe_form placeholder="Your Email Address!" button_class="subscribe-button"}}
+			</div>
+			{{/if}}
+		</header>
+		<section id="thumbnails">
+		{{#foreach posts}}
+			<article>
+				<a class="thumbnail" href="{{feature_image}}" data-position="left center"><img width="360px" src="{{feature_image}}" alt="{{title}}"></a>
+				<h2>{{title}}</h2>
+				<p>{{content}}</p>
+			</article>
+		{{/foreach}}
+		</section>
+		<footer id="footer">
+			<ul class="copyright">
+				<!-- You will void your license if you remove the credits -->
+				<li>&copy; {{@blog.title}}. Design: <a target="_blank" href="http://html5up.net">HTML5 UP</a>.<br>Ghost Integration: <a target="_blank" href="http://www.youtube.com/vasanthdeveloper">Vasanth Developer</a>.</li>
+			</ul>
+		</footer>
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+	{{ghost_foot}}
+</body>
+</html>

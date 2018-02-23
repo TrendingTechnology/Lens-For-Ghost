@@ -24,6 +24,6 @@ Don't forget to save changes, and now your site should be up and running with th
 [**Preview On Smart Phone**](https://raw.githubusercontent.com/vasanthdeveloper/Lens-For-Ghost/master/assets/screenshot-mobile.png)
 
 ### License
-This theme is released under the "Attribution 3.0 Unported (CC BY 3.0)".
+This theme is released under the "[Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/)".
 
 **Note:** You must give credit to HTML5UP as well as me for making this a Ghost Theme.
